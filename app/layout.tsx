@@ -5,10 +5,14 @@ import { FiUser } from "react-icons/fi";
 import Footer from "./components/footer";
 // import { useState } from "react";
 import { TextField } from "@mui/material";
+import type { ReactNode } from "react";
 
 
-export default function RootLayout({ children }) {
-
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html>
       <body>
