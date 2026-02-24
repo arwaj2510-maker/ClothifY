@@ -1,0 +1,144 @@
+.premium-container {
+
+    scroll-behavior: smooth;
+}
+
+.premium-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 88%;
+    margin-left: 6%;
+}
+
+.premium-slider {
+    display: flex;
+    padding: 10px 0;
+    gap: 30px;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    position: relative;
+}
+
+.premium-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.premium-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 320px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.4s ease;
+    flex: 0 0 calc((100% - 60px) / 3);
+}
+
+.premium-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 367px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-info h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.card-info p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.premium-arrow {
+    position: absolute;
+    top: 40%;
+    /* transform: translateY(-50%); */
+    background: black;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.premium-arrow:hover {
+    color: #333;
+}
+
+.left {
+    left: 37px;
+}
+
+.right {
+    right: 37px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .premium-card {
+        /* min-width: 240px; */
+        grid-template-columns: repeat(1fr);
+        overflow: hidden;
+
+    }
+
+    .btn {
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+
+    .premium-arrow {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.season-switch {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.season-switch button {
+    padding: 10px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 25px;
+    background: #e0e0e0;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.season-switch .active {
+    background: black;
+    color: white;
+}
+
+#season-btn:hover {
+    color: black;
+    transition: .2s linear;
+}
+
+.btn {
+    padding: 10px 22px;
+    margin: 30px;
+    margin-left: 76%;
+}
